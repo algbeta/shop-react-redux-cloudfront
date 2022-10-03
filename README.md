@@ -1,5 +1,11 @@
 # React-shop-cloudfront
 
+- automatically deployed CloudFront: https://d1yfh2p8pkppb7.cloudfront.net
+  s3 object url: https://algbeta-my-store-app.s3.eu-central-1.amazonaws.com
+- manually deployed CloudFront: https://dv9mtfqr5ixa1.cloudfront.net
+  s3 object url: https://algbeta-shop-react-redux-cloudfront.s3.eu-central-1.amazonaws.com
+ 
+
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
 - [Vite](https://vitejs.dev/) as a project bundler
