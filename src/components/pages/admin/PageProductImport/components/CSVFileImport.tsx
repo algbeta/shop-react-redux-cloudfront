@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from "react";
 import axios from "axios";
 import Typography from "@mui/material/Typography";
@@ -31,9 +32,11 @@ export default function CSVFileImport({ url, title }: CSVFileImportProps) {
       method: "GET",
       url,
       params: {
+        // @ts-ignore
         name: encodeURIComponent(file.name),
       },
     });
+    // @ts-ignore
     console.log("File to upload: ", file.name);
     console.log("Uploading to: ", response.data.body);
     const result = await fetch(response.data.body, {
