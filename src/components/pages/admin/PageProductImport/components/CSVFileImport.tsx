@@ -35,6 +35,9 @@ export default function CSVFileImport({ url, title }: CSVFileImportProps) {
         // @ts-ignore
         name: encodeURIComponent(file.name),
       },
+      headers: {
+        Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
+      },
     });
     // @ts-ignore
     console.log("File to upload: ", file.name);
